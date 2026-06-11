@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="人事や組織に関するご相談、サービスについてのお問い合わせはこちらのフォームよりお気軽にどうぞ。">
+<title>お問い合わせ | ヒトニギリ研究所</title>
+<link rel="icon" type="image/png" href="../assets/images/favicon.png">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="../" class="site-logo"><img src="../assets/images/logo.png" alt="一般社団法人ヒトニギリ研究所"></a>
+    <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" aria-label="グローバルナビゲーション">
+      <ul>
+        <li><a href="../">トップ</a></li>
+        <li><a href="../philosophy/">私たちの考え方</a></li>
+        <li><a href="../services/">サービス</a></li>
+        <li><a href="../about/">代表者・会社情報</a></li>
+        <li><a href="../contact/" class="nav-cta">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-header">
+    <div class="page-header__inner" data-animate="fade-up">
+      <span class="page-header__eyebrow">Contact</span>
+      <h1>お問い合わせ</h1>
+      <p class="page-header__lead">
+        人事や組織に関するご相談、サービスについてのお問い合わせなど、お気軽にご記入ください。<br>
+        内容を確認の上、3営業日以内にご返信いたします。
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-narrow" data-animate="fade-up">
+
+      <form class="form" data-mock-submit data-complete-url="./complete/" novalidate>
+
+        <div class="form-group">
+          <label class="form-label" for="name">お名前 <span class="required">必須</span></label>
+          <input type="text" id="name" name="name" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="company">会社名・組織名 <span class="required">必須</span></label>
+          <input type="text" id="company" name="company" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">メールアドレス <span class="required">必須</span></label>
+          <input type="email" id="email" name="email" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="role">ご所属・お立場 <span class="required">必須</span></label>
+          <select id="role" name="role" class="form-select" required>
+            <option value="">選択してください</option>
+            <option value="executive">経営者・役員</option>
+            <option value="hr">人事担当者</option>
+            <option value="manager">管理職</option>
+            <option value="other">その他</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="topic">ご相談内容のテーマ <span class="required">必須</span></label>
+          <select id="topic" name="topic" class="form-select" required>
+            <option value="">選択してください</option>
+            <option value="hsm">Human Style Map(HSM)について</option>
+            <option value="the-future">THE FUTUREについて</option>
+            <option value="labor-advisor">労務トラブルアドバイザーについて</option>
+            <option value="hr-ai">人事×AIサポートについて</option>
+            <option value="hr-advisory">人事アドバイザリー(人事の左腕)について</option>
+            <option value="other">その他のご相談</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="message">お問い合わせ内容 <span class="required">必須</span></label>
+          <textarea id="message" name="message" class="form-textarea" required></textarea>
+        </div>
+
+        <p class="form-notice">
+          お送りいただいた個人情報は、本お問い合わせへのご返信および関連するご連絡にのみ使用いたします。詳しくは<a href="../privacy/">プライバシーポリシー</a>をご確認ください。
+        </p>
+
+        <button type="submit" class="form-submit">お問い合わせを送信する</button>
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__top">
+      <div>
+        <div class="site-footer__brand">一般社団法人ヒトニギリ研究所</div>
+        <div class="site-footer__address">〒263-0035 千葉県千葉市稲毛区稲毛町5-557</div>
+      </div>
+      <nav class="site-footer__links" aria-label="フッターナビゲーション">
+        <a href="../">トップ</a>
+        <a href="../philosophy/">私たちの考え方</a>
+        <a href="../services/">サービス</a>
+        <a href="../about/">代表者・会社情報</a>
+        <a href="../contact/">お問い合わせ</a>
+        <a href="../privacy/">プライバシーポリシー</a>
+      </nav>
+    </div>
+    <div class="site-footer__copy">© 一般社団法人ヒトニギリ研究所</div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
