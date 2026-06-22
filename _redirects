@@ -1,0 +1,2 @@
+# www → 裸ドメインへ301リダイレクト（SEO的に正規URLを一本化）
+https://www.hitonigiri.com/* https://hitonigiri.com/:splat 301!
